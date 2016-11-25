@@ -51,3 +51,4 @@ gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootst
 
 gem "devise"
 gem "kaminari"
+gem 'rails_12factor', group: :production
