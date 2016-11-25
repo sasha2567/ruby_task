@@ -5,8 +5,8 @@ class PaymentsController < ApplicationController
 		@title = 'Application'
 		@user = current_user[:email]
 		@payments = Payment.all.page(params[:page]).per(10)
-		@start = @payments.first.start_date
-		@end = @payments.last.end_date
+		@start = @payments.first? ? @payments.first.start_date : ""
+		@end = @payments.last? ? @payments.last.end_date : ""
 	end
 
   def add
