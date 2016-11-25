@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= @title %></title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class="center col-md-8 col-md-offset-2">
+    <header class="header bg-info" class="col-md-12">
+      <div id="menu" class="center">
+        <div id="title" class=""><%= @title %></div>
+        <div id="center" class="center"></div>
+      
+        <div id="authorization">
+          <% if user_signed_in? %>
+            <%= link_to 'Logout', destroy_user_session_path, :method => :delete %>
+            <span id="email">(<%= current_user.email %>)</span>
+          <% else %>
+              <%= link_to 'Login', new_user_session_path %> или <%= link_to 'Registration', new_user_registration_path %>
+          <% end %>
+        </div>
+        <div =></div>
+      </div>
+    </header>
+    <div class="col-md-12">
+      <%= yield %>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+	box-sizing: border-box;
+}
+
+.center {
+	text-align: center;
+}
+
+#center {
+	width: 100%;
+}
+
+#title {
+	float: left;
+}
+
+#authorization {
+	float: right;
+}
+
+.header {
+	margin-bottom: 25px;
+	font-size: 16px;
+	padding: 10px 30px 20px;
+	border-radius: 4px;
+	height: 45px;
+}
+
+/*#add {
+	margin-bottom: 25px;
+}
+
+#add .add_payment {
+	width: 160px;
+	height: 45px;
+	font-size: 22px;
+}*/
+
+/*.delete-payment {
+	width: 80px;
+	border-radius: 4px;
+}
+
+.delete-payment-lnk, .delete-payment-lnk:hover, .delete-payment-lnk:active {
+	color: #fff;
+	text-decoration: none;
+}*/
+
+#authorization a, #authorization a:hover, #authorization a:active {
+	color: #fff;
+	text-decoration: none;
+}
+
+#email {
+	margin-left: 10px;
+}
