@@ -23,6 +23,9 @@ test:
   <<: *default
   database: 'test_db'
 
-# production:
-#   <<: *default
-#   database: 'test_db'
+production:
+  <<: *default
+  database: ENV[DB_NAME]
+  username: ENV[DB_USER]
+  password: ENV[DB_PASSWORD]
+  host:     ENV[DB_HOST]
