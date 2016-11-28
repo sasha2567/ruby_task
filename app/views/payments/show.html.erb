@@ -1,19 +1,18 @@
 <% provide(:title, @page_title) %>
-<div id="add" class="col-md-4 col-md-offset-4 center col-xs-4">
-	<p>
-		Payments from
-            <span class="from-to"><%=(@start ? @start : '')%></span>
-            to <span class="from-to"><%=(@end ? @end : '')%></span>
-	</p>
-	
+<div id="add-button">
+	<div class="col-md-8 text-left">
+		<p>
+			Payments from
+	            <span class="from-to"><%=(@start ? @start : '')%></span>
+	            to <span class="from-to"><%=(@end ? @end : '')%></span>
+		</p>
+		
+	</div>
+	<div class="col-md-4 col-xs-4 text-right">
+		<div class="add_payment btn btn-info">Create Payment</div>
+	</div>
 </div>
-<div id="add" class="col-md-4 center col-xs-4">
-	<div class="add_payment btn btn-info">Create Payment</div>
-</div>
-<div class="col-md-12">
-	
-</div>
-<table class="table .table-condensed">
+<table id="payments" class="table table-condensed">
 	<tbody class="table-striped">
 	<tr>
 			<th>#</th>

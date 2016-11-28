@@ -16,17 +16,35 @@
 
 body {
 	box-sizing: border-box;
+	font-size: 17px;
 }
 
 #title {
 	float: left;
 }
 
+.header div {
+	padding: 5px 45px;
+	font-size: 19px;
+}
+
+.header {
+	padding-bottom: 70px;
+}
+
+#payments {
+	margin-top: 70px;
+}
+
 #authorization {
 	float: right;
 }
 
-#authorization a, #authorization a:hover, #authorization a:active {
+#authorization, .header a {
+	font-weight: normal;
+}
+
+.header a, .header a:hover, .header a:active {
 	color: #fff;
 	text-decoration: none;
 }

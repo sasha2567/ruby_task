@@ -8,13 +8,16 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body class="center col-md-8 col-md-offset-2">
-    <header class="header bg-info" class="col-md-12">
-      <div id="menu" class="center">
-        <div id="title" class=""><%= @title %></div>
-        <div id="center" class="center"></div>
-      
-        <div id="authorization">
+  <body>
+    <header class="header">
+      <div class="label label-info col-md-12">
+        <div class="text-left col-md-4">
+          <%= @title %>
+          <a href="/">Main page</a>
+          <a href="/">Payments</a>
+        </div>
+        <div class="text-center col-md-4"></div>
+        <div id="authorization" class="text-right col-md-4">
           <% if user_signed_in? %>
             <%= link_to 'Logout', destroy_user_session_path, :method => :delete %>
             <span id="email">(<%= current_user.email %>)</span>
@@ -22,10 +25,9 @@
               <%= link_to 'Login', new_user_session_path %> или <%= link_to 'Registration', new_user_registration_path %>
           <% end %>
         </div>
-        <div =></div>
       </div>
     </header>
-    <div class="col-md-12">
+    <div class="col-md-8 col-md-offset-2">
       <%= yield %>
     </div>
   </body>
