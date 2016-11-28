@@ -18,14 +18,6 @@ body {
 	box-sizing: border-box;
 }
 
-.center {
-	text-align: center;
-}
-
-#center {
-	width: 100%;
-}
-
 #title {
 	float: left;
 }
@@ -33,34 +25,6 @@ body {
 #authorization {
 	float: right;
 }
-
-.header {
-	margin-bottom: 25px;
-	font-size: 16px;
-	padding: 10px 30px 20px;
-	border-radius: 4px;
-	height: 45px;
-}
-
-/*#add {
-	margin-bottom: 25px;
-}
-
-#add .add_payment {
-	width: 160px;
-	height: 45px;
-	font-size: 22px;
-}*/
-
-/*.delete-payment {
-	width: 80px;
-	border-radius: 4px;
-}
-
-.delete-payment-lnk, .delete-payment-lnk:hover, .delete-payment-lnk:active {
-	color: #fff;
-	text-decoration: none;
-}*/
 
 #authorization a, #authorization a:hover, #authorization a:active {
 	color: #fff;
