@@ -1,13 +1,12 @@
 require 'test_helper'
 
 class PaymentsControllerTest < ActionDispatch::IntegrationTest
-  
+  #include Devise::Test::ControllerHelpers
+
   test "should get show" do
-    get payments_show_url
-    assert_response :success
+    get '/payments/show'
+    assert_response :redirect
   end
 
-  test "should save new payment" do
-		
-	end
+  
 end
